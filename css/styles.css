@@ -1,0 +1,102 @@
+:root {
+  /** COLORS **/
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+
+  /** FONTS **/
+  --font-family: "Outfit", sans-serif;
+}
+
+/** BASE CSS **/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 15px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
+/** COINTAINERS **/
+
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+*/
+
+.container-bluebox {
+  background-color: hsl(212, 45%, 89%);
+
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-whitebox {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  width: 375px;
+  padding: 15px;
+  text-align: center;
+}
+
+.container-whitebox img {
+  max-width: 100%;
+  border-radius: 15px;
+  margin: 0;
+}
+
+/** TEXT **/
+
+.container-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.bold-text {
+  font-weight: 700;
+  color: var(--dark-blue);
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.normal-text {
+  color: var(--grayish-blue);
+  font-weight: 400;
+  padding: 0 40px;
+}
+
+/** ATTRIBUTION **/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
